@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- HOJAS DE ESTILO -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <!-- FUENTES -->
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div class="lds-ring" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- BOTÓN DE INICIAR -->
+    <div class="start_btn"><button>Iniciar</button></div>
+
+    <!-- CONTENEDOR DE INFORMACIÓN -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Reglas del Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. El Quiz cuenta con un total de 11 preguntas con formato falso o verdadero</div>
+            <div class="info">2. Cuentas con un limite de <span>20 segundos</span> por cada pregunta</div>
+            <div class="info">3. Una vez eligas tu respuesta, no puedes cambiarla</div>
+            <div class="info">4. No puedes seleccionar ninguna opción cuando el tiempo se agote</div>
+            <div class="info">5. Una vez inicie el quiz no puedes salir hasta que acabes</div>
+            <div class="info">6. Obtendras un punto por cada respuesta correcta</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Salir del quiz</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DE QUIZ -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz MocionSoft</div>
+            <div class="timer">
+                <div class="time_text">Tiempo restante</div>
+                <div class="timer_sec">20</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span> Pregunta número uno</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Verdadero</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Falso</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- FOOTER QUIZ -->
+        <footer>
+            <div class="total_que">
+               <!--  <span>
+                    <p>2</p>de<p>11</p>Preguntas
+                </span> -->
+            </div>
+            <button class="next_btn">Siguiente pregunta</button>
+        </footer>
+    </div>
+
+    <!--  CONTENEDOR DE RESULATADOS -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-flag-checkered"></i>
+        </div>
+        <div class="complete_text">Has completado el Quiz!</div>
+        <div class="score_text">
+           <!--  <span>Tuviste <p>2</p>de <p>11</p></span> -->
+        </div>
+        <div class="buttons">
+            <!-- <button class="restart">Repetir el Quiz</button> -->
+            <button class="quit">Repetir el Quiz</button>
+        </div>
+    </div>
+
+    <!-- HOJAS DE JAVASCRIPT -->
+
+    <script src="js/loader.js"></script>
+    <script src="js/transiciones.js"></script>
+    <script src="js/preguntas.js"></script>
+</body>
+
+</html>
